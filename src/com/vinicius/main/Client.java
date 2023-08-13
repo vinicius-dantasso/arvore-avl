@@ -25,7 +25,7 @@ public class Client {
                 "\n[1]Cadastrar Veículo" +
                 "\n[2]Atualizar Veículo" +
                 "\n[3]Remover Veículo" +
-                "\n[4]Pesquisar Por Placa" +
+                "\n[4]Pesquisar Veículo" +
                 "\n[5]Listar Todos os Veículos" +
                 "\n[6]Total de Veículos Cadastrados" +
                 "\n[0]Sair"

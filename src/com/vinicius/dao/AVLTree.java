@@ -81,6 +81,7 @@ public class AVLTree {
             node.right = insert(node.right, vehicle);
         } else {
             // Veículos duplicados não são permitidos na árvore AVL
+            System.out.println("\nVeículo já está cadastrado!\n");
             return node;
         }
 
@@ -195,7 +196,8 @@ public class AVLTree {
     public Node searchByPlate(String vehiclePlate) {
         Node node = searchByPlate(root, vehiclePlate);
 
-        System.out.println(
+        if(node != null){
+            System.out.println(
             "\n// --------------------------------------" +
             "\nPlaca: " + node.vehicle.getPlate() +
             "\nRenavam: " + node.vehicle.getRenavam() +
@@ -204,7 +206,11 @@ public class AVLTree {
             "\nProprietário: " + node.vehicle.getConductor().getName() +
             "\nCPF: " + node.vehicle.getConductor().getCpf() +
             "\n// --------------------------------------\n"
-        );
+            );
+        }
+        else{
+            System.out.println("\nVeículo não encontrado!\n");
+        }
 
         return node;
     }
