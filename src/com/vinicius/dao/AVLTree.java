@@ -1,5 +1,8 @@
 package com.vinicius.dao;
 
+import java.io.FileWriter;
+import java.io.IOException;
+
 import com.vinicius.entities.Vehicle;
 
 class Node {
@@ -71,6 +74,7 @@ public class AVLTree {
 
     private Node insert(Node node, Vehicle vehicle) {
         if (node == null) {
+            fileWriter("Veículo Inserido!\n" + "Altura Atual da Árvore:" + (height(root)+1) + "\n");
             return new Node(vehicle);
         }
 
@@ -90,22 +94,26 @@ public class AVLTree {
 
         // Caso Esquerda-Esquerda
         if (balanceamento > 1 && vehiclePlate.compareTo(node.left.vehicle.getPlate()) < 0) {
+            fileWriter("Rotação Direita Simples\n");
             return rotateRight(node);
         }
 
         // Caso Direita-Direita
         if (balanceamento < -1 && vehiclePlate.compareTo(node.right.vehicle.getPlate()) > 0) {
+            fileWriter("Rotação Esquerda Simples\n");
             return rotateLeft(node);
         }
 
         // Caso Esquerda-Direita
         if (balanceamento > 1 && vehiclePlate.compareTo(node.left.vehicle.getPlate()) > 0) {
+            fileWriter("Rotação Dupla Direita\n");
             node.left = rotateLeft(node.left);
             return rotateRight(node);
         }
 
         // Caso Direita-Esquerda
         if (balanceamento < -1 && vehiclePlate.compareTo(node.right.vehicle.getPlate()) < 0) {
+            fileWriter("Rotação Dupla Esquerda\n");
             node.right = rotateRight(node.right);
             return rotateLeft(node);
         }
@@ -321,6 +329,17 @@ public class AVLTree {
         Node node = searchByPlate(vehiclePlate);
         return node.height-1;
 
+    }
+
+    private void fileWriter(String content){
+        try{
+            FileWriter writer = new FileWriter("Log.txt",true);
+            writer.write(content);
+            writer.close();
+        }
+        catch(IOException e){
+            e.printStackTrace();
+        }
     }
 
 }
