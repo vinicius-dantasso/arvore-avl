@@ -1,0 +1,114 @@
+Veículo Inserido!
+Altura Atual da Árvore:0
+Veículo Inserido!
+Altura Atual da Árvore:0
+Veículo Inserido!
+Altura Atual da Árvore:1
+Veículo Inserido!
+Altura Atual da Árvore:2
+Rotação Dupla Esquerda
+Veículo Inserido!
+Altura Atual da Árvore:2
+Veículo Inserido!
+Altura Atual da Árvore:3
+Rotação Dupla Direita
+Veículo Inserido!
+Altura Atual da Árvore:3
+Rotação Esquerda Simples
+Veículo Inserido!
+Altura Atual da Árvore:3
+Rotação Dupla Direita
+Veículo Inserido!
+Altura Atual da Árvore:3
+Veículo Inserido!
+Altura Atual da Árvore:4
+Veículo Inserido!
+Altura Atual da Árvore:4
+Veículo Inserido!
+Altura Atual da Árvore:4
+Veículo Inserido!
+Altura Atual da Árvore:4
+Veículo Inserido!
+Altura Atual da Árvore:4
+Veículo Inserido!
+Altura Atual da Árvore:4
+Veículo Inserido!
+Altura Atual da Árvore:4
+Veículo Inserido!
+Altura Atual da Árvore:4
+Rotação Dupla Direita
+Veículo Inserido!
+Altura Atual da Árvore:4
+Veículo Inserido!
+Altura Atual da Árvore:4
+Veículo Inserido!
+Altura Atual da Árvore:4
+Veículo Inserido!
+Altura Atual da Árvore:4
+Veículo Inserido!
+Altura Atual da Árvore:4
+Rotação Esquerda Simples
+Veículo Inserido!
+Altura Atual da Árvore:4
+Veículo Inserido!
+Altura Atual da Árvore:4
+Veículo Inserido!
+Altura Atual da Árvore:4
+Rotação Dupla Direita
+Veículo Inserido!
+Altura Atual da Árvore:4
+Veículo Inserido!
+Altura Atual da Árvore:5
+Veículo Inserido!
+Altura Atual da Árvore:5
+Rotação Esquerda Simples
+Veículo Inserido!
+Altura Atual da Árvore:5
+Veículo Inserido!
+Altura Atual da Árvore:5
+Veículo Inserido!
+Altura Atual da Árvore:5
+Rotação Dupla Direita
+Veículo Inserido!
+Altura Atual da Árvore:5
+Veículo Inserido!
+Altura Atual da Árvore:5
+Veículo Inserido!
+Altura Atual da Árvore:5
+Rotação Esquerda Simples
+Veículo Inserido!
+Altura Atual da Árvore:5
+Veículo Inserido!
+Altura Atual da Árvore:5
+Veículo Inserido!
+Altura Atual da Árvore:5
+Rotação Dupla Direita
+Veículo Inserido!
+Altura Atual da Árvore:5
+Rotação Dupla Direita
+Veículo Inserido!
+Altura Atual da Árvore:5
+Veículo Inserido!
+Altura Atual da Árvore:5
+Veículo Inserido!
+Altura Atual da Árvore:6
+Veículo Inserido!
+Altura Atual da Árvore:6
+Veículo Inserido!
+Altura Atual da Árvore:6
+Veículo Inserido!
+Altura Atual da Árvore:6
+Veículo Inserido!
+Altura Atual da Árvore:6
+Veículo Inserido!
+Altura Atual da Árvore:6
+Veículo Inserido!
+Altura Atual da Árvore:6
+Veículo Inserido!
+Altura Atual da Árvore:6
+Veículo Inserido!
+Altura Atual da Árvore:6
+Rotação Dupla Esquerda
+Veículo Inserido!
+Altura Atual da Árvore:6
+Rotação Direita Simples

@@ -74,7 +74,7 @@ public class AVLTree {
 
     private Node insert(Node node, Vehicle vehicle) {
         if (node == null) {
-            fileWriter("Veículo Inserido!\n" + "Altura Atual da Árvore:" + (height(root)+1) + "\n");
+            fileWriter("Veículo Inserido!\n" + "Altura Atual da Árvore:" + height(root) + "\n");
             return new Node(vehicle);
         }
 
@@ -127,6 +127,7 @@ public class AVLTree {
 
     private Node remove(Node node, String vehiclePlate) {
         if (node == null) {
+            System.out.println("\nVeículo não encontrado!\n");
             return node;
         }
 
@@ -151,15 +152,19 @@ public class AVLTree {
                 } else { // Caso com um filho
                     node = temp;
                 }
+                //fileWriter("Veículo Removido!\nAltura Atual:" + height(root) + "\n");
             } else {
                 // Nó com dois filhos: obter o sucessor in-order (menor valor na subárvore à direita)
                 Node temp = findMin(node.right);
                 node.vehicle = temp.vehicle;
                 node.right = remove(node.right, temp.vehicle.getPlate());
+                fileWriter("Veículo Removido!\nAltura Atual:" + height(root) + "\n");
+                System.out.println("\nVeículo Removido!\n");
             }
         }
 
         if (node == null) {
+            System.out.println("\nVeículo não encontrado!\n");
             return node;
         }
 
@@ -171,22 +176,26 @@ public class AVLTree {
 
         // Caso Esquerda-Esquerda
         if (balanceamento > 1 && balancingFactor(node.left) >= 0) {
+            fileWriter("Rotação Direita Simples\n");
             return rotateRight(node);
         }
 
         // Caso Direita-Direita
         if (balanceamento < -1 && balancingFactor(node.right) <= 0) {
+            fileWriter("Rotação Esquerda Simples\n");
             return rotateLeft(node);
         }
 
         // Caso Esquerda-Direita
         if (balanceamento > 1 && balancingFactor(node.left) < 0) {
+            fileWriter("Rotação Dupla Direita\n");
             node.left = rotateLeft(node.left);
             return rotateRight(node);
         }
 
         // Caso Direita-Esquerda
         if (balanceamento < -1 && balancingFactor(node.right) > 0) {
+            fileWriter("Rotação Dupla Esquerda\n");
             node.right = rotateRight(node.right);
             return rotateLeft(node);
         }
